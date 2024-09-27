@@ -1,5 +1,4 @@
 library(plumber)
-library(loadings)
 
 # Title
 #* @apiTitle API Title

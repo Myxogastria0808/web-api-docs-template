@@ -11,6 +11,6 @@ about:
 
 # Hugging Face Spaces
 
-<a class="my-link-button" href="">Try Web API</a>
+<a class="my-link-button" href="https://myxogastria0808-web-api-template.hf.space">Try Web API</a>
 
 This is a top page.

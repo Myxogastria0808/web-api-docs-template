@@ -3,9 +3,7 @@ let
 
   rpkgs = builtins.attrValues {
     inherit (pkgs.rPackages)
-      loadings
       plumber
-      readr
       languageserver;
   };
   system_packages = builtins.attrValues {

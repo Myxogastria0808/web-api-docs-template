@@ -1,0 +1,16 @@
+---
+title: "Web API Docs Template"
+about:
+  template: jolla
+  image: ./assets/top.png
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+# Hugging Face Spaces
+
+<a class="my-link-button" href="">Try Web API</a>
+
+This is a top page.

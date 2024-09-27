@@ -1,0 +1,7 @@
+---
+title: "Docs"
+---
+
+## Docs Sample
+
+This is a docs page.

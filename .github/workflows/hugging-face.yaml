@@ -33,11 +33,11 @@ jobs:
           lfs: true
       - name: Copy README.md
         run: cp -f docs/README.md docs/_site/README.md
-      - name: Push to site branch
+      - name: Push to docs branch
         uses: s0/git-publish-subdir-action@master
         env:
           REPO: self
-          BRANCH: site
+          BRANCH: docs
           FOLDER: docs/_site
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   docs-sync-to-hub:
@@ -55,6 +55,6 @@ jobs:
           HF_DOCS_SPACE_NAME: ${{ secrets.HF_DOCS_SPACE_NAME }}
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git switch site
-          git push --force https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$HF_DOCS_SPACE_NAME site:main
-          git push https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$HF_DOCS_SPACE_NAME site:main
+          git switch docs
+          git push --force https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$HF_DOCS_SPACE_NAME docs:main
+          git push https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$HF_DOCS_SPACE_NAME docs:main
